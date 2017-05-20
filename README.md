@@ -1,1 +1,1 @@
-# CV
+# Curriculum Vitae d'un étudiant en DUT Informatique.

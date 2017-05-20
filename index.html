@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Binjouuur !</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js"></script>
+	</head>
+	
+	<body onload="load()">
+	    <div id="etatCivil" class="block blue">
+		    <div class="sectionWrapper">
+				<table>
+					<tr>
+					    <td id="name" colspan="2">Elyan Poujol</td>
+					</tr>
+					
+					<tr>
+					    <td id="address"></td>
+						<td>24 rue vieussens, 12000 Rodez</td>
+					</tr>
+					
+					<tr>
+					    <td id="phone"></td>
+					    <td>06.52.13.39.24</td>
+					</tr>
+					
+					<tr>
+					    <td id="email"></td>
+						<td>elyan.poujol@iut-rodez.fr</td>
+					</tr>
+				</table>
+				
+				<div class="descendre" onclick="scrollTo('projetPersonnel')">Continuer</div>
+				
+				<img id="photoPerso" src="topho2_450x600.jpg" />
+			</div>
+		</div>
+		
+		<div id="projetPersonnel" class="block red">
+			<div class="sectionWrapper">
+				<h2>Je veu € pour mangé !</h2>
+				
+				<h3>Mes diplômes/formations :</h3>
+				<ul>
+					<li>2016/2017, Etudiant en 1ère année de DUT Informatique, IUT de Rodez</li>
+					<li>2015/2016, BAC STI2D, Lycée Alexis Monteil de Rodez</li>
+				</ul>
+				
+				<div class="descendre" onclick="scrollTo('connaissances')">Continuer</div>
+			</div>
+		</div>
+		
+		<div id="connaissances" class="block green">
+			<div class="sectionWrapper">
+				<table id="listeConnaissances">
+					<tr>
+						<td>
+							<h3>Mes langages :</h3>
+							<ul>
+								<li>Java<br><span id="java" class="jauge">Java</span></li>
+								<li>SQL, PL/SQL<br><span id="sql" class="jauge">SQL,&nbspPL/SQL</span></li>
+								<li>C<br><span id="c" class="jauge">C</span></li>
+								<li>Javascript<br><span id="javascript" class="jauge">Javascript</span></li>
+								<li>Bash<br><span id="bash" class="jauge">Bash</span></li>
+								<li>Assembleur<br><span id="assembleur" class="jauge">Assembleur</span></li>
+								<li>HTML<br><span id="html" class="jauge">HTML</span></li>
+								<li>CSS<br><span id="css" class="jauge">CSS</span></li>
+								<li>Visual Basic<br><span id="visualbasic" class="jauge">Visual&nbspBasic</span></li>
+								<li>XML<br><span id="xml" class="jauge">XML</span></li>
+								<li>PHP<br><span id="php" class="jauge">PHP</span></li>
+							</ul>
+						</td>
+
+						<td>
+							<h3>Mes logiciels utilisés :</h3>
+							<ul>
+								<li>Photofiltre<br><span id="photofiltre" class="jauge">Photofiltre</span></li>
+								<li>Paint<br><span id="paint" class="jauge">Paint</span></li>
+								<li>Vegas Pro<br><span id="vegaspro" class="jauge">Vegas&nbspPro</span></li>
+								<li>SQL Developper<br><span id="sqldev" class="jauge">SQL&nbspDevelopper</span></li>
+								<li>Win’Design<br><span id="windesign" class="jauge">Win’Design</span></li>
+								<li>Flash Pro CS6<br><span id="flashpro" class="jauge">Flash&nbspPro&nbspCS6</span></li>
+								<li>Wireshark<br><span id="wireshark" class="jauge">Wireshark</span></li>
+								<li>MS Access<br><span id="msaccess" class="jauge">MS&nbspAccess</span></li>
+								<li>Filezilla<br><span id="filezilla" class="jauge">Filezilla</span></li>
+								<li>Maple<br><span id="maple" class="jauge">Maple</span></li>
+								<li>WAMP Server<br><span id="wamp" class="jauge">WAMP&nbspServer</span></li>
+								<li>Eclipse<br><span id="eclipse" class="jauge">Eclipse</span></li>
+								<li>NetBeans<br><span id="netbeans" class="jauge">NetBeans</span></li>
+								<li>Notepad++<br><span id="notepad" class="jauge">Notepad++</span></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+				
+				<div class="descendre" onclick="scrollTo('projets')">Continuer</div>
+			</div>
+		</div>
+		
+		<div id="projets" class="block brown">
+			<div class="sectionWrapper">
+				<h3>Mes projets :</h3>
+				
+				<div class="projetsWrapper">
+					<p>2016 : Projet de conception d’un robot explorateur de 
+					canalisations en Terminale STI2D au lycée Alexis Monteil de 
+					Rodez. Résultats mitigés pour cause de migration vers des 
+					technologies inconnues et par manque d'inverstissement de 
+					l'équipe.</p>
+				</div>
+				
+				<div class="projetsWrapper">
+					<p>2016 : Projet de conception d’un site web sur le thème de 
+					la cybercriminalité durant le premier semestre du DUT 
+					Informatique de l’IUT de Rodez. Résultats mitigés, le projet 
+					a abouti et était satisfaisant mais la communication au sein 
+					du groupe n’était pas optimale. </p>
+					<a href="https://github.com/422404/La_cybercriminalite">Github </a>
+					<br>
+					<a href="http://cybercriminalite.toile-libre.org/">Le site web </a>
+				</div>
+				
+				<div class="projetsWrapper">
+					<p>2016 : Projet de conception d’un jeu du pendu web durant 
+					le second semestre du DUT Informatique de l’IUT de Rodez. 
+					<br>...</p>
+					<a href="https://github.com/422404/Pendu-JS">Github </a>
+				</div>
+				
+				<div class="descendre" onclick="scrollTo('autre')">Continuer</div>
+			</div>
+		</div>
+		
+		<div id="autre" class="block purple">
+			<div class="sectionWrapper">
+				<table>
+					<tr>
+					    <td colspan="2"><h3>Mes centres d'intérêt :</h3></td>
+					</tr>
+					
+					<tr>
+					    <td id="programmation"></td>
+						<td>Programmation</td>
+					</tr>
+					
+					<tr>
+					    <td id="jeux"></td>
+					    <td>Jeux vidéos</td>
+					</tr>
+					
+					<tr>
+					    <td id="metal"></td>
+						<td>Musique métallique</td>
+					</tr>
+				</table>
+				
+				<div id="divers">
+					<h3>Autres infos :</h3>
+					<ul>
+						<li>J'ai 18 ans</li>
+					</ul>
+				</div>
+				
+				<div class="descendre" onclick="scrollTo('etatCivil')">Remonter</div>
+				
+				<footer>
+				Elyan Poujol - 2017
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>
