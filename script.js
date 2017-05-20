@@ -19,20 +19,23 @@ var scrolled;
 var down;
 
 function scrollTo(elementId) {
+	frame = 60;
+	duration = 800;
+	
 	_elementId = elementId;
 	scrolled = document.body.scrollTop;
 	i = 0;
 	
 	if (scrolled < getTopOffset(_elementId)) {
 		elementOffset = getTopOffset(_elementId) - scrolled;
-		lastOffset = elementOffset % 30;
-		offset = (elementOffset - lastOffset)/30
+		lastOffset = elementOffset % frame;
+		offset = (elementOffset - lastOffset)/frame
 		
 		down = true;
     } else {
 	    elementOffset = scrolled - getTopOffset(_elementId);
-		lastOffset = elementOffset % 30;
-		offset = (elementOffset - lastOffset)/30
+		lastOffset = elementOffset % frame;
+		offset = (elementOffset - lastOffset)/frame
 		
 		down = false;
 	}
@@ -48,12 +51,12 @@ function scrollTo(elementId) {
 		/*console.log(i + ' ' + offset + ' ' + getTopOffset(_elementId) + ' '
 		           + document.body.scrollTop);*/
 		
-		if (i == 30
+		if (i == frame
 		    || scrolled == document.body.scrollTop) {
 			document.body.scrollTop = getTopOffset(_elementId);
 			clearInterval(hInterval);
 		}
 		
 		scrolled = document.body.scrollTop;
-	}, 33);
+	}, duration/frame);
 }
